@@ -12,6 +12,11 @@ body {
     padding: 30px;
     border-radius: 10px;
 }
+h2{
+    margin-bottom: 20px;
+    color: rgb(15, 111, 155);
+ text-decoration: underline;
+}
 input{
     width: 70%;
     height: 30px;
@@ -34,10 +39,12 @@ input{
     margin-bottom: 20px;
     width: 20%;
     height: 40px;
-    font-size: 30px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    background: rgb(165, 21, 21);
-    color: white;
+    color: rgb(102, 10, 4);
+}
+ol li {
+    margin: 15px;
+    font-size: 20px;
 }
