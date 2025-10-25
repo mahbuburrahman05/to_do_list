@@ -15,11 +15,10 @@ body {
 h2{
     margin-bottom: 20px;
     color: rgb(15, 111, 155);
- text-decoration: underline;
 }
 input{
     width: 70%;
-    height: 30px;
+    height: 36px;
     font-size: 20px;
     border-radius: 5px;
     border: none;
@@ -27,7 +26,7 @@ input{
 }
 .btn{
     width: 20%;
-    height: 42px;
+    height: 36px;
     font-size: 20px;
     border-radius: 5px;
     border: none;
@@ -36,7 +35,7 @@ input{
     color: white;
 }
 .delete{
-    margin-bottom: 20px;
+    margin-top: 20px;
     width: 20%;
     height: 40px;
     border-radius: 5px;
@@ -47,4 +46,85 @@ input{
 ol li {
     margin: 15px;
     font-size: 20px;
+}
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === To-Do List Container === */
+ol {
+  list-style: none;
+  padding: 20px;
+  width: 350px;
+  background: #d3dee9;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+/* === List Items === */
+ol li {
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover & Active Effects */
+ol li:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 12px #cbd5e0, -4px -4px 12px #070202;
+}
+
+/* === Anchor Tag Inside li === */
+ol li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* When hovering link */
+ol li a:hover {
+  color: #1976d2;
+}
+
+/* === Optional Delete Button or Icon (if added later) === */
+ol li button,
+ol li .delete {
+  background: transparent;
+  border: none;
+  color: #ff5252;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+ol li button:hover,
+ol li .delete:hover {
+  transform: scale(1.2);
+}
+
+/* === Checked or Completed Style (Optional for JS) === */
+ol li.completed {
+  background: #e0f7fa;
+  text-decoration: line-through;
+  opacity: 0.7;
 }
